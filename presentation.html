@@ -10,472 +10,466 @@
 <body>
   <div class="reveal">
     <div class="slides">
-      <section id="title" class="hero" data-transition="zoom">
-        <div class="hero-shell">
-          <p class="eyebrow">A hopeful talk for first- and second-year CSE students</p>
-          <h1>The Beginner's Advantage in the Age of AI</h1>
-          <p class="lead">AI is making coding more accessible. That is exactly why fundamentals, critical thinking, and curiosity are becoming more valuable.</p>
-          <div class="chip-row">
-            <p class="chip">Vibhor</p>
-            <p class="chip">VP Engineering, CareSmartz360</p>
-            <p class="chip">Chitkara University '08</p>
+
+      <!-- 1. TITLE — hero typographic with single big mark -->
+      <section id="title" class="dark no-bar" data-transition="zoom">
+        <div class="layout-hero with-mark">
+          <div>
+            <p class="eyebrow" style="color: var(--teal-bright); margin-bottom: 24px;">A talk for first &amp; second-year CSE</p>
+            <h1 style="font-size: 64px; line-height: 1.02; max-width: 14ch;">Why fresh minds may win the AI era.</h1>
+            <p class="hero-lead" style="margin-top: 28px;">AI makes coding more accessible — which is exactly why fundamentals, judgment, and curiosity become more valuable.</p>
+            <div class="hero-chips" style="margin-top: 36px;">
+              <p class="chip">Vibhor</p>
+              <p class="chip">VP Engineering · CareSmartz360</p>
+              <p class="chip">Chitkara '08</p>
+            </div>
+          </div>
+          <div class="hero-mark" aria-hidden="true">
+            <p class="mark-word">Judgment.</p>
+            <p class="mark-sub">the part you cannot outsource</p>
           </div>
         </div>
       </section>
 
+      <!-- 2. NOSTALGIA — two photos with year bridge -->
       <section id="nostalgia">
-        <h2>Same student energy, very different tools</h2>
-        <div class="content">
-          <div class="photo-grid">
-            <figure class="photo-card graduation">
-              <img src="./assets/graduation.jpg" alt="Vibhor at graduation in 2008" />
-              <figcaption>Graduation, 2008: a beginner with questions.</figcaption>
-            </figure>
-            <div class="year-marker" aria-hidden="true">
-              <p>2008</p>
-              <div class="year-line"></div>
-              <p>2026</p>
-            </div>
-            <figure class="photo-card portrait">
-              <img src="./assets/portrait.jpeg" alt="Recent portrait of Vibhor" />
-              <figcaption>Today: same curiosity, much stronger leverage.</figcaption>
-            </figure>
+        <h2 class="slide-title">Same student energy, very different tools</h2>
+        <div class="photo-pair" style="margin-top: 32px;">
+          <figure class="photo-frame">
+            <span class="year-label">2008</span>
+            <img src="./assets/graduation.jpg" alt="Vibhor at graduation in 2008" />
+            <figcaption>Graduation · a beginner with questions</figcaption>
+          </figure>
+          <div class="year-bridge" aria-hidden="true">
+            <span class="label">same curiosity</span>
+            <div class="arrow"></div>
+            <span class="label">far more leverage</span>
           </div>
-          <div class="quote-strip">The point of this talk is possibility: the same curiosity now has dramatically more leverage.</div>
+          <figure class="photo-frame">
+            <span class="year-label">2026</span>
+            <img src="./assets/portrait.jpeg" alt="Recent portrait of Vibhor" />
+            <figcaption>Today · same questions, sharper tools</figcaption>
+          </figure>
         </div>
       </section>
 
+      <!-- 3. AI MOMENT — single big statement, no diagram -->
       <section id="ai-moment">
-        <h2>A better way to read the AI moment</h2>
-        <div class="content">
-          <div class="quote-strip">AI makes first drafts easier. That gives beginners more room to practice thinking, building, and asking sharper questions.</div>
-          <div class="compare-grid">
-            <div class="compare-panel before">
-              <h3>Surface reading</h3>
-              <ul>
-                <li>AI can generate code quickly.</li>
-                <li>Many tools now start from natural language.</li>
-                <li>Beginners can prototype earlier.</li>
-              </ul>
-            </div>
-            <div class="compare-panel after">
-              <h3>Deeper reading</h3>
-              <ul>
-                <li>Thinking shapes what is worth building.</li>
-                <li>Fresh minds can form strong habits early.</li>
-                <li>Students can learn by making real things.</li>
-              </ul>
-            </div>
+        <div class="layout-split text-heavy">
+          <div class="split-text">
+            <p class="eyebrow">A better way to read this moment</p>
+            <p class="big-statement">AI makes the <em>first draft</em> easier. That makes <em>thinking</em> the edge.</p>
           </div>
-          <div class="insight-row">
-            <div class="insight">
-              <h3>Build sooner</h3>
-              <p>Use AI to make ideas testable earlier.</p>
-            </div>
-            <div class="insight">
-              <h3>Think deeper</h3>
-              <p>Ask what would make the answer reliable.</p>
-            </div>
-            <div class="insight">
-              <h3>Learn visibly</h3>
-              <p>Turn theory into small working systems.</p>
+          <div class="split-visual">
+            <div class="depth-stack">
+              <div class="depth-card surface">
+                <span class="label">Surface</span>
+                <p class="title">Code appears faster.</p>
+                <p class="body">Boilerplate, scaffolding, and first drafts arrive in minutes.</p>
+              </div>
+              <div class="depth-card deeper">
+                <span class="label">Deeper</span>
+                <p class="title">Thinking decides what deserves to exist.</p>
+                <p class="body">What to build, why, and how to know it's right — that's still on you.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- 4. ORIGIN STORY — single screenshot, dominant -->
       <section id="origin-story">
-        <h2>In 2008, my “AI” project looked like this</h2>
-        <div class="content">
-          <div style="display: grid; grid-template-columns: 1.02fr 0.98fr; gap: 26px; align-items: start;">
-            <div style="display: flex; flex-direction: column; gap: 16px;">
-              <p class="lead">I built an AI chatbot as my final-year project at the same college, long before today’s LLM wave.</p>
-              <ul>
-                <li>The ambition was real, and the constraints taught patience.</li>
-                <li>Trying ideas like this in 2008 required far more time and setup.</li>
-                <li>What changed most by 2026 is the cost of experimentation.</li>
-              </ul>
-              <div class="quote-strip">This artifact is a reminder: the urge to build was already there. Today, students have much more leverage to act on it.</div>
-            </div>
-            <figure class="shot">
-              <img src="./assets/Screenshot 2026-04-29 at 11.21.51 AM.png" alt="Screenshot of iBot chatbot project from 2008" />
-              <figcaption>
-                iBot, major project, 2008.
-                <a href="./assets/ibot Chatbot CSE BTECH Chitkara MAJOR PROJECT REPORT 2008.doc">Original project report</a>
-              </figcaption>
+        <div class="layout-split">
+          <div class="split-text">
+            <p class="eyebrow">Personal note · 2008</p>
+            <h2 style="font-size: 40px; line-height: 1.08;">My final-year project was an AI chatbot.</h2>
+            <p class="lead" style="margin-top: 12px;">Same building, same curiosity. Just much harder to actually build.</p>
+            <p style="margin-top: 8px; font-size: 19px; color: var(--ink-soft);">What changed most by 2026 is not ambition — it's the cost of trying ideas.</p>
+          </div>
+          <div class="split-visual">
+            <figure class="origin-shot">
+              <img src="./assets/ibot-screenshot-2008.png" alt="Screenshot of iBot chatbot project from 2008" />
+              <figcaption>iBot · major project · 2008 · <a href="./assets/ibot Chatbot CSE BTECH Chitkara MAJOR PROJECT REPORT 2008.doc">project report</a></figcaption>
             </figure>
           </div>
         </div>
       </section>
 
-      <section id="changed-unchanged">
-        <h2>What changed since 2008, and what endured</h2>
-        <div class="content">
-          <div class="compare-grid">
-            <div class="card">
-              <h3>Changed</h3>
-              <ul>
-                <li>Boilerplate is cheaper.</li>
-                <li>Prototypes are faster.</li>
-                <li>Trying ideas is dramatically easier.</li>
-                <li>AI can assist across the workflow.</li>
-              </ul>
-            </div>
-            <div class="card">
-              <h3>Endured</h3>
-              <ul>
-                <li>Correctness still depends on mental models.</li>
-                <li>Users still depend on our choices.</li>
-                <li>Systems still hide assumptions.</li>
-                <li>Curiosity and judgment still compound.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="stat-grid">
-            <div class="stat-box">
-              <h3>Syntax</h3>
-              <p>Easier to generate.</p>
-            </div>
-            <div class="stat-box">
-              <h3>Framing</h3>
-              <p>Harder to fake.</p>
-            </div>
-            <div class="stat-box">
-              <h3>Judgment</h3>
-              <p>More valuable now.</p>
-            </div>
-            <div class="stat-box">
-              <h3>Curiosity</h3>
-              <p>Still the edge.</p>
-            </div>
-          </div>
+      <!-- 5. SECTION DIVIDER — what changed, what endured -->
+      <section id="div-changed" class="section-divider" data-transition="fade">
+        <div class="layout-divider">
+          <p class="eyebrow">Eighteen years later</p>
+          <p class="display-md">What changed.<br/>What endured.</p>
         </div>
       </section>
 
+      <!-- 6. CHANGED — single column big list -->
+      <section id="changed">
+        <div class="center-v">
+          <h2 class="slide-title">Changed</h2>
+          <p class="lead" style="max-width: 28ch; margin-bottom: 36px;">The cost of going from idea to working software dropped sharply.</p>
+          <ul class="key-list" style="max-width: 880px;">
+            <li><span class="num">1</span><span>Boilerplate is essentially free.</span></li>
+            <li><span class="num">2</span><span>Prototypes ship in hours, not weeks.</span></li>
+            <li><span class="num">3</span><span>AI assists across debugging, testing, review, and docs.</span></li>
+            <li><span class="num">4</span><span>Trying an ambitious idea is dramatically easier.</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 7. ENDURED — single column big list -->
+      <section id="endured">
+        <div class="center-v">
+          <h2 class="slide-title">Endured</h2>
+          <p class="lead" style="max-width: 30ch; margin-bottom: 36px;">The things that decide whether software is actually good barely moved.</p>
+          <ul class="key-list dotted" style="max-width: 880px;">
+            <li><span class="num">01</span><span>Correctness still depends on mental models.</span></li>
+            <li><span class="num">02</span><span>Users still depend on the choices we make.</span></li>
+            <li><span class="num">03</span><span>Systems still hide assumptions until they break.</span></li>
+            <li><span class="num">04</span><span>Curiosity and judgment still compound over time.</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 8. SECTION DIVIDER — beginners shipping -->
+      <section id="div-beginners" class="section-divider" data-transition="fade">
+        <div class="layout-divider">
+          <p class="eyebrow">From the field</p>
+          <p class="display-md">Beginners are<br/>already shipping.</p>
+        </div>
+      </section>
+
+      <!-- 9. FRESHERS — single big statement -->
       <section id="freshers">
-        <h2>CareSmartz Lite showed what beginners can do</h2>
-        <div class="content">
-          <div style="display: grid; grid-template-columns: 1.02fr 0.98fr; gap: 24px; align-items: start;">
-            <div style="display: flex; flex-direction: column; gap: 16px;">
-              <p class="lead">Freshers contributed to real product work when they had context, trust, and useful tools.</p>
-              <ul>
-                <li>They learned fast when the work was framed well.</li>
-                <li>They asked better questions as they gained context.</li>
-                <li>They improved quickly when trust and tooling were present.</li>
-              </ul>
-              <div class="quote-strip">The beginner’s advantage is learning velocity: curiosity, openness, and fast feedback loops.</div>
-            </div>
-            <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px;">
-              <div class="card">
-                <h3>Context</h3>
-                <p>Explain why the problem matters.</p>
-              </div>
-              <div class="card">
-                <h3>Trust</h3>
-                <p>Give real ownership early.</p>
-              </div>
-              <div class="card">
-                <h3>Tooling</h3>
-                <p>Good guardrails turn effort into progress.</p>
-              </div>
-              <div class="card">
-                <h3>Feedback</h3>
-                <p>Fast loops create confidence.</p>
-              </div>
-            </div>
+        <div class="layout-split text-heavy">
+          <div class="split-text">
+            <p class="eyebrow">CareSmartz Lite</p>
+            <p class="big-statement">Freshers contributed to <em>real product work</em> when they had context, trust, and useful tools.</p>
+          </div>
+          <div class="split-visual">
+            <ul class="key-list" style="gap: 22px;">
+              <li><span class="num">·</span><span>They learned fast when the work was framed well.</span></li>
+              <li><span class="num">·</span><span>They asked sharper questions as context grew.</span></li>
+              <li><span class="num">·</span><span>They improved quickly with trust and tooling in place.</span></li>
+            </ul>
           </div>
         </div>
       </section>
 
+      <!-- 10. LEARNING DELIVERY — full-width 4-step timeline -->
       <section id="learning-delivery">
-        <h2>When the path changed, the team learned and delivered</h2>
-        <div class="content">
-          <div style="display: grid; grid-template-columns: 0.88fr 1.12fr; gap: 28px; align-items: start;">
-            <div class="path">
-              <p class="step">Learn fast</p>
-              <p class="step">Test assumptions</p>
-              <p class="step">Correct course</p>
-              <p class="step">Deliver</p>
-            </div>
-            <div style="display: flex; flex-direction: column; gap: 16px;">
-              <p class="lead">I saw this when the team shipped AI features by learning quickly and taking ownership of the problem.</p>
-              <ul>
-                <li>The team learned Python quickly.</li>
-                <li>They built capability through experiments and review.</li>
-                <li>They improved model choices through evidence.</li>
-              </ul>
-              <div class="quote-strip">Readiness grows through movement: learn, try, review, improve, and deliver.</div>
-            </div>
+        <h2 class="slide-title">Readiness grew through movement, not credentials</h2>
+        <p class="lead" style="max-width: 36ch; margin-bottom: 8px;">When the path changed mid-project, the team learned fast and shipped — by owning the problem.</p>
+        <div class="timeline-row">
+          <div class="timeline-step">
+            <span class="step-num">01 · Learn</span>
+            <span class="dot"></span>
+            <h3>Learn fast</h3>
+            <p>Pick up the language and the domain quickly enough to participate.</p>
+          </div>
+          <div class="timeline-step">
+            <span class="step-num">02 · Test</span>
+            <span class="dot"></span>
+            <h3>Test assumptions</h3>
+            <p>Use experiments and review to check what is actually true.</p>
+          </div>
+          <div class="timeline-step">
+            <span class="step-num">03 · Adjust</span>
+            <span class="dot"></span>
+            <h3>Correct course</h3>
+            <p>Change models and choices when evidence says so.</p>
+          </div>
+          <div class="timeline-step">
+            <span class="step-num">04 · Ship</span>
+            <span class="dot"></span>
+            <h3>Deliver</h3>
+            <p>Turn the learning loop into working product outcomes.</p>
           </div>
         </div>
       </section>
 
-      <section id="agents" class="dark-panel">
-        <h2>Engineering work is now humans plus AI agents</h2>
-        <div class="content">
-          <div class="workflow">
-            <div class="workflow-card">
-              <h3>RCA</h3>
-              <p>Connect symptoms to causes.</p>
-            </div>
-            <div class="workflow-card">
-              <h3>Patch + TDD</h3>
-              <p>Generate, verify, and review with evidence.</p>
-            </div>
-            <div class="workflow-card">
-              <h3>Architecture Review</h3>
-              <p>Compare options and expose trade-offs.</p>
-            </div>
-            <div class="workflow-card">
-              <h3>Code Review</h3>
-              <p>Catch patterns, risks, and drift.</p>
-            </div>
-            <div class="workflow-card">
-              <h3>Incident Review</h3>
-              <p>Turn incidents into learning loops.</p>
-            </div>
-            <div class="workflow-card">
-              <h3>Customer Briefing</h3>
-              <p>Translate complexity into clear language.</p>
-            </div>
+      <!-- 11. AGENTS — big radial diagram -->
+      <section id="agents" class="dark">
+        <h2 class="slide-title" style="margin-bottom: 8px;">Engineering work is now humans + AI agents</h2>
+        <p class="lead" style="max-width: 40ch; margin-bottom: 24px;">AI extends across debugging, testing, review, documentation, and communication. Judgment stays with the human.</p>
+        <div class="agent-board">
+          <div class="agent-center">
+            <p class="mono">Human</p>
+            <h3>Owns judgment</h3>
           </div>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: start;">
-            <p class="lead">AI now extends across debugging, testing, review, documentation, and communication.</p>
-            <div class="card">
-              <h3>Still human-owned</h3>
-              <ul>
-                <li>Correctness</li>
-                <li>Privacy</li>
-                <li>Bias and safety</li>
-                <li>Consequences</li>
-              </ul>
-            </div>
-          </div>
-          <div class="quote-strip">The better the human judgment, the better the AI outcome.</div>
+          <div class="agent-pill ap-pos-1"><span class="pill-mono">debug</span>RCA</div>
+          <div class="agent-pill ap-pos-2"><span class="pill-mono">code</span>Patch + TDD</div>
+          <div class="agent-pill ap-pos-3"><span class="pill-mono">design</span>Architecture review</div>
+          <div class="agent-pill ap-pos-4"><span class="pill-mono">review</span>Code review</div>
+          <div class="agent-pill ap-pos-5"><span class="pill-mono">ops</span>Incident review</div>
+          <div class="agent-pill ap-pos-6"><span class="pill-mono">talk</span>Customer briefing</div>
         </div>
       </section>
 
-      <section id="fundamentals-divider" class="section-divider" data-transition="fade">
-        <div class="divider-shell">
-          <p class="eyebrow">The deeper opportunity AI creates</p>
-          <h1>Faster tools make fundamentals more valuable</h1>
-          <p class="lead">Speed makes deep understanding more valuable.</p>
+      <!-- 12. AGENTS OWNERSHIP — what stays human-owned -->
+      <section id="agents-ownership" class="dark">
+        <h2 class="slide-title" style="margin-bottom: 12px;">What stays human-owned</h2>
+        <p class="lead" style="max-width: 44ch; margin-bottom: 40px;">The better the human judgment, the better the AI outcome.</p>
+        <div class="ownership-row">
+          <div class="ownership-cell">
+            <span class="mono">01</span>
+            <h3>Correctness</h3>
+            <p>Deciding what "right" means, and proving the system meets it.</p>
+          </div>
+          <div class="ownership-cell">
+            <span class="mono">02</span>
+            <h3>Privacy</h3>
+            <p>What data is collected, what's shared, and with whom.</p>
+          </div>
+          <div class="ownership-cell">
+            <span class="mono">03</span>
+            <h3>Bias &amp; safety</h3>
+            <p>Who can be harmed, and what guardrails actually hold.</p>
+          </div>
+          <div class="ownership-cell">
+            <span class="mono">04</span>
+            <h3>Consequences</h3>
+            <p>Owning what the system does once it lives in the world.</p>
+          </div>
         </div>
       </section>
 
+      <!-- 13. SECTION DIVIDER — fundamentals -->
+      <section id="div-fundamentals" class="section-divider" data-transition="fade">
+        <div class="layout-divider">
+          <p class="eyebrow">The deeper opportunity</p>
+          <p class="display-md">Faster tools make<br/>fundamentals more valuable.</p>
+          <p class="lead" style="max-width: 38ch; margin-top: 16px;">When implementation gets cheap, understanding is the part you cannot outsource.</p>
+        </div>
+      </section>
+
+      <!-- 14. FUNDAMENTALS — 6 big tiles, no center -->
       <section id="fundamentals">
-        <h2>Classroom topics become product superpowers</h2>
-        <div class="content">
-          <div class="fund-grid">
-            <div class="fund-card">
-              <h3>Data Structures</h3>
-              <p>Scheduling conflicts reveal interval logic inside calendar UI.</p>
-            </div>
-            <div class="fund-card">
-              <h3>Databases</h3>
-              <p>Indexes, compatibility, and assumptions decide real outcomes.</p>
-            </div>
-            <div class="fund-card">
-              <h3>Operating Systems</h3>
-              <p>Processes, memory, boot, and isolation become concrete ideas.</p>
-            </div>
-            <div class="fund-card">
-              <h3>Networks</h3>
-              <p>Reliability, latency, ordering, and retries are lived trade-offs.</p>
-            </div>
-            <div class="fund-card">
-              <h3>Testing</h3>
-              <p>Testing is structured doubt for both humans and AI.</p>
-            </div>
-            <div class="fund-card">
-              <h3>Architecture</h3>
-              <p>Alternatives, boundaries, and operational cost remain central.</p>
-            </div>
+        <h2 class="slide-title" style="margin-bottom: 32px;">Classroom topics become product superpowers</h2>
+        <div class="fundamentals-grid">
+          <div class="fund-tile">
+            <span class="topic">DSA</span>
+            <h3>Data structures</h3>
+            <p>Scheduling conflicts and indexes are interval problems in disguise.</p>
           </div>
-          <div class="quote-strip">As AI makes code easier to generate, CSE becomes a training ground for thinkers, builders, and responsible engineers.</div>
+          <div class="fund-tile">
+            <span class="topic">DBMS</span>
+            <h3>Databases</h3>
+            <p>Indexes, isolation, and version compatibility decide real outcomes.</p>
+          </div>
+          <div class="fund-tile">
+            <span class="topic">OS</span>
+            <h3>Operating systems</h3>
+            <p>Processes, memory, and isolation become concrete once you build one.</p>
+          </div>
+          <div class="fund-tile">
+            <span class="topic">NET</span>
+            <h3>Networks</h3>
+            <p>Reliability, ordering, and retries are lived trade-offs in production.</p>
+          </div>
+          <div class="fund-tile">
+            <span class="topic">QA</span>
+            <h3>Testing</h3>
+            <p>Testing is structured doubt — equally useful for humans and AI.</p>
+          </div>
+          <div class="fund-tile">
+            <span class="topic">ARCH</span>
+            <h3>Architecture</h3>
+            <p>Alternatives, boundaries, and operational cost remain the central call.</p>
+          </div>
         </div>
       </section>
 
-      <section id="scheduling-sql">
-        <h2>Real examples: fundamentals turn into judgment</h2>
-        <div class="content">
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px;">
-            <div class="card">
-              <h3>Scheduling conflicts reveal DSA</h3>
-              <ul>
-                <li>Intervals, unions, intersections, recurrence.</li>
-                <li>A caregiver calendar is also an algorithm problem.</li>
-                <li>Abstraction helps clarify rich product reality.</li>
-              </ul>
-            </div>
-            <div class="card">
-              <h3>SQL behavior reveals assumptions</h3>
-              <ul>
-                <li>A compatibility issue made environmental expectations visible.</li>
-                <li>Systems that look similar can behave differently.</li>
-                <li>AI helps more when the engineer understands the ground truth.</li>
-              </ul>
+      <!-- 15. SCHEDULING CASE — full slide, single big diagram -->
+      <section id="case-scheduling">
+        <div class="layout-split visual-heavy">
+          <div class="split-text">
+            <p class="eyebrow">Real example · 1 of 2</p>
+            <h2 style="font-size: 38px; line-height: 1.1;">A caregiver calendar is also an algorithm problem.</h2>
+            <p class="lead" style="margin-top: 14px; font-size: 22px;">Two visits overlap. Suddenly intervals, unions, and recurrence stop being abstract.</p>
+            <p style="margin-top: 18px; font-size: 19px; color: var(--ink-soft);">Abstraction is the tool that turns rich product reality into something solvable.</p>
+          </div>
+          <div class="split-visual">
+            <div class="interval-canvas">
+              <div class="clock-row">
+                <span>09:00</span><span>10:30</span><span>11:00</span><span>12:00</span>
+              </div>
+              <div class="interval-track">
+                <div class="conflict-band">conflict</div>
+                <div class="bar event-a">visit · 09:00–11:00</div>
+                <div class="bar event-b">visit · 10:30–12:00</div>
+              </div>
             </div>
           </div>
-          <div class="quote-strip">In real engineering, visible behavior is an invitation to understand the deeper system.</div>
         </div>
       </section>
 
-      <section id="maker-moment">
-        <h2>2026 is the best time to be a maker</h2>
-        <div class="content">
-          <p class="lead">For the first time, students can actually live the lessons while they are still learning them.</p>
-          <div class="compare-grid">
-            <div class="compare-panel before">
-              <h3>2008 reality</h3>
-              <ul>
-                <li>Ambitious ideas required more setup time.</li>
-                <li>Curiosity often had to wait for tooling.</li>
-                <li>Many concepts were harder to experience directly.</li>
-              </ul>
-            </div>
-            <div class="compare-panel after">
-              <h3>2026 reality</h3>
-              <ul>
-                <li>AI lowers the cost of experimentation.</li>
-                <li>You can build while learning theory.</li>
-                <li>Making has become a practical way to study.</li>
-              </ul>
+      <!-- 16. SQL CASE — full slide -->
+      <section id="case-sql">
+        <div class="layout-split visual-heavy">
+          <div class="split-text">
+            <p class="eyebrow">Real example · 2 of 2</p>
+            <h2 style="font-size: 38px; line-height: 1.1;">SQL behavior reveals what your code is really standing on.</h2>
+            <p class="lead" style="margin-top: 14px; font-size: 22px;">Same query, different version, different result. The stack underneath is doing real work.</p>
+            <p style="margin-top: 18px; font-size: 19px; color: var(--ink-soft);">AI helps more when the engineer understands the ground truth.</p>
+          </div>
+          <div class="split-visual">
+            <div>
+              <p class="sql-banner">mysql 5.7  !=  mysql 8.0</p>
+              <div class="sql-stack">
+                <div class="sql-layer"><span>product query</span><span class="depth">your code</span></div>
+                <div class="sql-layer"><span>driver behavior</span><span class="depth">library</span></div>
+                <div class="sql-layer"><span>database version</span><span class="depth">engine</span></div>
+                <div class="sql-layer"><span>environment</span><span class="depth">infra</span></div>
+              </div>
             </div>
           </div>
-          <div class="quote-strip">This is one of the best times in history to become a maker because curiosity can turn into working systems faster than ever.</div>
         </div>
       </section>
 
-      <section id="live-os">
-        <h2>If you are learning operating systems, build a tiny world</h2>
-        <div class="content">
-          <div style="display: grid; grid-template-columns: 1.04fr 0.96fr; gap: 22px; align-items: start;">
-            <div class="card">
-              <h3>Live the lesson</h3>
-              <ul>
-                <li>Vibe-code a tiny hello-world flavor of Linux from scratch.</li>
-                <li>Let boot, memory, processes, and interrupts become felt experiences.</li>
-                <li>Use AI to accelerate the scaffolding while you stay close to the meaning.</li>
-              </ul>
-            </div>
-            <div class="mini-map">
-              <div class="mini-node">
-                <h3>Boot</h3>
-                <p>How does anything start?</p>
-              </div>
-              <div class="mini-node">
-                <h3>Memory</h3>
-                <p>Where does state live?</p>
-              </div>
-              <div class="mini-node">
-                <h3>Process</h3>
-                <p>What is actually running?</p>
-              </div>
-              <div class="mini-node">
-                <h3>I/O</h3>
-                <p>How does the machine talk back?</p>
-              </div>
-            </div>
-          </div>
-          <div class="quote-strip">In 2008, this was intellectually exciting and time-intensive. In 2026, it is practical enough to try while you learn.</div>
+      <!-- 17. SECTION DIVIDER — build the lesson -->
+      <section id="div-build" class="section-divider" data-transition="fade">
+        <div class="layout-divider">
+          <p class="eyebrow">2026 advantage</p>
+          <p class="display-md">Build the lesson<br/>while you learn it.</p>
+          <p class="lead" style="max-width: 38ch; margin-top: 16px;">For the first time, ambitious students can experience systems thinking directly — instead of waiting for "later".</p>
         </div>
       </section>
 
-      <section id="live-networks">
-        <h2>If you are learning networks, send real packets</h2>
-        <div class="content">
-          <div style="display: grid; grid-template-columns: 1.04fr 0.96fr; gap: 22px; align-items: start;">
-            <div class="card">
-              <h3>Make the trade-offs visible</h3>
-              <ul>
-                <li>Build a tiny app that sends data over TCP and UDP.</li>
-                <li>See reliability, ordering, retries, and speed as behavior you can observe.</li>
-                <li>Watch the concept become real as the system responds in front of you.</li>
-              </ul>
-            </div>
-            <div class="compare-grid" style="grid-template-columns: 1fr 1fr; gap: 12px;">
-              <div class="mini-node">
-                <h3>TCP</h3>
-                <p>Reliable, ordered, heavier.</p>
-              </div>
-              <div class="mini-node">
-                <h3>UDP</h3>
-                <p>Lighter, faster, no guarantees.</p>
-              </div>
-            </div>
+      <!-- 18. OS LAB — full-width layered diagram -->
+      <section id="lab-os">
+        <h2 class="slide-title" style="margin-bottom: 8px;">If you're learning operating systems, build a tiny world</h2>
+        <p class="lead" style="max-width: 50ch; margin-bottom: 36px;">Vibe-code a hello-world flavor of Linux. Let boot, memory, processes, and I/O become felt experiences.</p>
+        <div class="os-system">
+          <div class="os-block">
+            <span class="layer-num">L0</span>
+            <h3>bootloader</h3>
+            <span class="role">starts the machine</span>
           </div>
-          <div class="packet-lab" aria-label="Tiny network lab flow from sender through protocol to receiver">
-            <div class="packet-node">
-              <h3>Sender</h3>
-              <p>your tiny app</p>
-            </div>
-            <div class="packet-arrow"></div>
-            <div class="packet-node">
-              <h3>TCP / UDP</h3>
-              <p>same data, different guarantees</p>
-            </div>
-            <div class="packet-arrow"></div>
-            <div class="packet-node">
-              <h3>Receiver</h3>
-              <p>observe the real behavior</p>
-            </div>
+          <div class="os-block">
+            <span class="layer-num">L1</span>
+            <h3>kernel</h3>
+            <span class="role">owns the hardware</span>
           </div>
-          <div class="quote-strip">The concepts become memorable when you can see packets, delays, and trade-offs with your own eyes.</div>
+          <div class="os-block">
+            <span class="layer-num">L2</span>
+            <h3>memory</h3>
+            <span class="role">places state</span>
+          </div>
+          <div class="os-block">
+            <span class="layer-num">L3</span>
+            <h3>process</h3>
+            <span class="role">runs the work</span>
+          </div>
+          <div class="os-block">
+            <span class="layer-num">L4</span>
+            <h3>i / o</h3>
+            <span class="role">talks to the world</span>
+          </div>
+        </div>
+        <p class="footnote" style="margin-top: 36px;">In 2026, this is practical enough to try while you learn.</p>
+      </section>
+
+      <!-- 19. NETWORK LAB — full-width TCP vs UDP packet view -->
+      <section id="lab-networks">
+        <h2 class="slide-title" style="margin-bottom: 8px;">If you're learning networks, send real packets</h2>
+        <p class="lead" style="max-width: 50ch; margin-bottom: 32px;">Build a tiny app. Send the same data over both TCP and UDP. Watch the trade-offs become visible.</p>
+        <div class="network-canvas">
+          <div class="protocol-row">
+            <div class="protocol-label tcp">
+              <span class="name">TCP</span>
+              <span class="desc">ordered · acknowledged</span>
+            </div>
+            <div class="packet-track tcp">
+              <div class="packet">1</div>
+              <div class="packet">2</div>
+              <div class="packet">3</div>
+              <div class="packet">4</div>
+              <div class="packet">5</div>
+              <div class="packet">6</div>
+            </div>
+            <div class="endpoint">→ receiver</div>
+          </div>
+          <div class="protocol-row">
+            <div class="protocol-label udp">
+              <span class="name">UDP</span>
+              <span class="desc">fast · no guarantees</span>
+            </div>
+            <div class="packet-track udp">
+              <div class="packet">1</div>
+              <div class="packet">2</div>
+              <div class="packet">3</div>
+              <div class="packet">4</div>
+              <div class="packet">5</div>
+              <div class="packet">6</div>
+            </div>
+            <div class="endpoint">→ receiver</div>
+          </div>
+          <div class="protocol-traits">
+            <div class="protocol-trait"><span class="tag">TCP</span><span class="what">Reliability and ordering, paid for in latency.</span></div>
+            <div class="protocol-trait"><span class="tag">UDP</span><span class="what">Speed and freshness, paid for in lost packets.</span></div>
+          </div>
         </div>
       </section>
 
+      <!-- 20. PLAYBOOK — single big numbered list -->
       <section id="playbook">
-        <h2>How to build your beginner’s advantage now</h2>
-        <div class="content">
-          <div style="display: grid; grid-template-columns: 1.02fr 0.98fr; gap: 24px; align-items: start;">
-            <div class="card">
-              <h3>Practice like this</h3>
-              <ol class="number-list">
-                <li>Start from first principles before you reach for prompts.</li>
-                <li>Build small, personal, useful systems while you study.</li>
-                <li>Use AI as a thought partner while you keep reasoning active.</li>
-                <li>Write tests, explain trade-offs, and keep evidence.</li>
-                <li>Ask better questions than your peers.</li>
-              </ol>
+        <div class="center-v">
+          <h2 class="slide-title" style="margin-bottom: 12px;">How to build your beginner's advantage now</h2>
+          <p class="lead" style="max-width: 36ch; margin-bottom: 36px;">Practice that compounds — through fundamentals, AI, and your own taste.</p>
+          <ul class="key-list" style="max-width: 1000px;">
+            <li><span class="num">1</span><span>Start from <strong>first principles</strong> before you reach for a prompt.</span></li>
+            <li><span class="num">2</span><span>Build <strong>small, personal, useful systems</strong> while you study.</span></li>
+            <li><span class="num">3</span><span>Use AI as a <strong>thought partner</strong> — keep your reasoning active.</span></li>
+            <li><span class="num">4</span><span>Write tests, explain trade-offs, <strong>keep your evidence</strong>.</span></li>
+            <li><span class="num">5</span><span>Ask <strong>better questions</strong> than your peers.</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 21. CLOSING — hero -->
+      <section id="closing" class="dark no-bar" data-transition="zoom">
+        <div class="layout-hero">
+          <div style="max-width: 1000px;">
+            <p class="eyebrow" style="color: var(--teal-bright); margin-bottom: 24px;">Builder's note</p>
+            <h1 style="font-size: 60px; line-height: 1.05; max-width: 18ch;">Fresh minds are arriving at exactly the right time.</h1>
+            <p class="hero-lead" style="margin-top: 28px; max-width: 700px;">The field needs beginners who can think clearly, build courageously, and turn faster tools into trustworthy systems.</p>
+            <div class="closing-row">
+              <span class="closing-word"><em>Thinkers</em></span>
+              <span class="closing-word"><em>Builders</em></span>
+              <span class="closing-word"><em>Responsible engineers</em></span>
             </div>
-            <div class="rules">
-              <div class="rule-card">
-                <h3>Own your judgment</h3>
-                <p>When you can explain it, you can improve it.</p>
-              </div>
-              <div class="rule-card">
-                <h3>Respect boundaries</h3>
-                <p>Know what data you are sharing and why.</p>
-              </div>
-              <div class="rule-card">
-                <h3>Prefer useful constraints</h3>
-                <p>Good conventions and strong frameworks help both humans and AI stay honest.</p>
-              </div>
-            </div>
-          </div>
-          <div class="idea-strip">
-            <div class="idea"><p>tiny OS hello world</p></div>
-            <div class="idea"><p>TCP vs UDP mini app</p></div>
-            <div class="idea"><p>schedule conflict visualizer</p></div>
-            <div class="idea"><p>tamper-evident notes</p></div>
           </div>
         </div>
       </section>
 
-      <section id="closing" class="hero" data-transition="zoom">
-        <div class="hero-shell">
-          <p class="eyebrow">Takeaway</p>
-          <h1>Fresh minds are arriving at exactly the right time.</h1>
-          <p class="lead">The field still needs beginners who can think clearly, build courageously, and turn faster tools into trustworthy systems.</p>
-          <div class="chip-row">
-            <p class="chip">Thinkers</p>
-            <p class="chip">Builders</p>
-            <p class="chip">Responsible engineers</p>
+      <!-- 22. FUTURE JOBS — bar chart with WEF data -->
+      <section id="future-jobs" class="dark" data-transition="fade">
+        <h2 class="slide-title" style="margin-bottom: 12px;">Future outlook: jobs <em style="font-style: italic; color: var(--teal-bright);">will</em> change</h2>
+        <p class="lead" style="max-width: 56ch; margin-bottom: 40px;">Some roles disappear. New ones appear. Many existing roles change. People with judgment, curiosity, and first-principles thinking rarely go out of fashion.</p>
+        <div class="jobs-board">
+          <div class="bar-chart">
+            <div class="bar-row">
+              <div class="row-label"><span class="num">170M</span><span class="what">jobs created</span></div>
+              <div class="bar-track"><div class="bar-fill created"></div></div>
+            </div>
+            <div class="bar-row">
+              <div class="row-label"><span class="num">92M</span><span class="what">jobs displaced</span></div>
+              <div class="bar-track"><div class="bar-fill displaced"></div></div>
+            </div>
+            <div class="bar-row">
+              <div class="row-label"><span class="num">+78M</span><span class="what">net growth</span></div>
+              <div class="bar-track"><div class="bar-fill net"></div></div>
+            </div>
           </div>
-          <p class="footnote">Chitkara 2008 to 2026: this may be the best time yet to learn by making.</p>
+          <div class="disruption-stat">
+            <span class="big">22%</span>
+            <span class="what">of jobs disrupted by 2030</span>
+          </div>
         </div>
+        <p class="footnote" style="margin-top: 32px;">Source · World Economic Forum · Future of Jobs Report 2025</p>
       </section>
+
     </div>
   </div>
 
